@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback, useMemo } from 'react';
 import ProductForm from './components/ProductForm';
 import ProductList from './components/ProductList';
 import SearchBar from './components/SearchBar';
+import './App.css';
 
 function App() {
   const [products, setProducts] = useState([]);

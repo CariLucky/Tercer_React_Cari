@@ -42,10 +42,10 @@ function ProductForm({ onAdd, onUpdate, editingProduct }) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input name="descripcion" placeholder="Descripción" value={product.descripcion} onChange={handleChange} required />
-      <input name="precioUnitario" type="number" placeholder="Precio Unitario" value={product.precioUnitario} onChange={handleChange} required />
-      <input name="descuento" type="number" placeholder="Descuento %" value={product.descuento} onChange={handleChange} required />
-      <input name="stock" type="number" placeholder="Stock" value={product.stock} onChange={handleChange} required />
+      <input className='in' name="descripcion" placeholder="Descripción" value={product.descripcion} onChange={handleChange} required />
+      <input className='in' name="precioUnitario" type="number" placeholder="Precio Unitario" value={product.precioUnitario} onChange={handleChange} required />
+      <input className='in' name="descuento" type="number" placeholder="Descuento %" value={product.descuento} onChange={handleChange} required />
+      <input className='in' name="stock" type="number" placeholder="Stock" value={product.stock} onChange={handleChange} required />
       <button type="submit">{editingProduct ? 'Actualizar' : 'Agregar'} Producto</button>
     </form>
   );

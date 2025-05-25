@@ -42,17 +42,19 @@ function App() {
   return (
     <div className="container">
       <h1>Gestión de Productos</h1>
-      <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      
       <ProductForm
         onAdd={handleAddProduct}
         onUpdate={handleUpdateProduct}
         editingProduct={editingProduct}
       />
+      <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <ProductList
         products={filteredProducts}
         onDelete={handleDeleteProduct}
         onEdit={handleEditProduct}
       />
+      
     </div>
   );
 }
